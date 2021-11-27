@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="main">        
+            <nav>
+                <h2>Blabla Cart</h2>
+                <ul>
+                    <li class="cart">
+                        <button data-modal-target="#modal"><ion-icon name="cart"></ion-icon>Cart<span>0</span>
+                            
+                        </button>
+                    </li class="username">
+                    <li><a href="cart.html"><ion-icon name="person"></ion-icon>Username</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!---Cart popup--->
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Cart Items</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+           <div class="products-container">
+               <div class="product-header">
+                   <h5 class="product-title">PRODUCT</h5>
+                   <h5 class="price">PRICE</h5>
+                   <h5 class="quantity">QUANTITY</h5>
+                   <h5 class="total">TOTAL</h5>                
+               </div>
+               <div class="products">
+
+               </div>
+           </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    
+
+
+    <div class="grid-container">
+
+        <div >
+            
+            <ul>
+                <li><a href="">Category 1</a></li>
+                <li><a href="">Category 2</a></li>
+                <li><a href="">Category 3</a></li>
+            </ul>
+
+        </div>
+
+        <div class="container">  
+                <div class="image">
+                    <img src="iphone.jpg" alt="product1">
+                    <h5>iphone</h5>
+                    <h5>$800</h5>
+                    <a class="add-cart cart1" href="#">Add Cart</a>
+                    
+                    
+                </div>
+                <div class="image">
+                    <img src="laptop.jpg" alt="product2">
+                    <h5>laptop</h5>
+                    <h5>$80</h5>
+                    <a class="add-cart cart2" href="#">Add Cart</a>
+                    
+                </div>
+                <div class="image">
+                    <img src="headphone.jpg" alt="product3">
+                    <h5>headphone</h5>
+                    <h5>$50</h5>
+                    <a class="add-cart cart3" href="#">Add Cart</a>
+                    
+                </div>
+                <div class="image">
+                    <img src="earpods.jpg" alt="product4">
+                    <h5>earpods</h5>
+                    <h5>$60</h5>
+                    <a class="add-cart cart4" href="#">Add Cart</a>
+                    
+                </div>
+                
+                       
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
